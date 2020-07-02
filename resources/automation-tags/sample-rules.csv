@@ -1,0 +1,4 @@
+name,description,type,conditions,tags,status
+Blank rule,Tag with custom rules,customer,[],Your tags,1
+Tag products based on inventory quantity,Tag X when products has inventory quantity smaller than,product,"[{&#34;func&#34;:&#34;checkAnyVariantComparePriceLargerThanPrice&#34;,&#34;value&#34;:&#34;0&#34;,&#34;property&#34;:&#34;product.variants&#34;,&#34;logicalOperator&#34;:&#34;or&#34;}]",Compare price larger than price,1
+Tag orders based on product inventory quantity,Tag X when orders has any product inventory quantity is smaller than Y,order,"[{&#34;func&#34;:&#34;stringContains&#34;,&#34;value&#34;:&#34;VIP&#34;,&#34;property&#34;:&#34;order.customer.tags&#34;,&#34;logicalOperator&#34;:&#34;or&#34;}]",VIP,1
