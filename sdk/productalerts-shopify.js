@@ -5,6 +5,6 @@
  * Help desk: https://help.ordersify.com
  * Support email: support@ordersify.com
  * Homepage: https://orderisfy.com
- * @version 1.0.3
- * Published at 23 October 2020 14:20 AM
+ * @version 1.0.5
+ * Published at 23 October 2020 15:00 AM
  */
