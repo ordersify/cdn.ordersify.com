@@ -23,4 +23,4 @@ function removeBanner() {
   }
 }
 
-createBanner('Happy New Year! We are VERY sorry for this inconvenience but our National Holiday ( Lunar New Year ) is from Feb 10 to Feb 6 ( GMT+7 ). We will get back to you shortly. For any serious issue, please simply uninstall the app to avoid problems to your live site, then email to us at support@ordersify.com');
+createBanner('Happy New Year! We are VERY sorry for this inconvenience but our National Holiday ( Lunar New Year ) is from Jan 30 to Feb 6 ( GMT+7 ). We will get back to you shortly. For any serious issue, please simply uninstall the app to avoid problems to your live site, then email to us at support@ordersify.com');
