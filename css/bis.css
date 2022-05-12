@@ -1,4 +1,4 @@
-.obsf_poweredby {
+.osf_powered_by {
   position: absolute;
   bottom: -45px;
   margin: auto;
@@ -8,23 +8,23 @@
   color: #fff;
 }
 
-.obsf_poweredby a {
+.osf_powered_by a {
   font-weight: 400;
   color: #fff;
   font-size: 14px;
   transition: font-weight 0.4s ease;
 }
 
-.obsf_poweredby a:hover {
+.osf_powered_by a:hover {
   font-weight: bold;
   color: #fff;
 }
 
-.obsf_poweredby svg {
+.osf_powered_by svg {
   fill: #fff;
 }
 
-.odsf_ss {
+.osf_ss {
   border: dotted;
 }
 
@@ -39,6 +39,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  color: var(--osf-popup-text-color)
 }
 
 .osf_checkbox input {
@@ -97,6 +98,7 @@
   text-transform: uppercase;
   outline: none;
   z-index: 99999999;
+  cursor: pointer;
 }
 
 /**
@@ -104,6 +106,7 @@
  */
 .osf_inline_button {
   width: 100%;
+  cursor: pointer;
 }
 
 /**
@@ -137,6 +140,7 @@
 .osf_popup {
   z-index: 1000000;
   background: #fff;
+  color: #000000;
   margin: auto;
   pointer-events: none;
   max-width: 460px;
@@ -158,7 +162,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: #fff;
   border-radius: .3rem
 }
 
@@ -228,6 +231,7 @@
 .osf_select {
   width: 100%;
   outline: none;
+  background: transparent;
 }
 
 .osf_form_field {
@@ -258,7 +262,6 @@
   width: 100%;
   outline: none;
   border: 0;
-  text-transform: uppercase;
   padding: 10px;
 }
 
@@ -268,6 +271,7 @@
 
 .osf_note {
   font-size: 80%;
+  margin-bottom: 0;
 }
 
 .osf_check_container input {
@@ -501,4 +505,267 @@
   color: #ffffff;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.osf_powered_by a {
+  text-decoration: none;
+}
+
+.osf_inline_form .osf_close_button {
+  display: none;
+}
+
+.osf_inline_form {
+  background: #ffffff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.osf_heading {
+  color: var(--osf-popup-heading-color);
+  margin-top: 0;
+}
+
+.osf_desc {
+  color: var(--osf-popup-text-color)
+}
+
+.osf_close_button {
+  color: var(--osf-popup-btn-color)
+}
+
+.osf_close_span {
+  color: var(--osf-popup-btn-bg-color)
+}
+
+.osf_select, .osf_input {
+  border-radius: var(--osf-field-border-radius)
+}
+
+.osf_submit_button {
+  background: var(--osf-popup-btn-bg-color);
+  color: var(--osf-popup-btn-color);
+  border-radius: var(--osf-field-border-radius);
+}
+
+.osf_checkmark {
+  background-color: var(--osf-popup-btn-bg-color);
+  border-radius: var(--osf-field-border-radius);
+}
+
+.osf_check_container {
+  color: var(--osf-popup-text-color);
+  font-size: var(--osf-font-size);
+}
+
+.osf_note {
+  color: var(--osf-popup-text-color);
+}
+
+.osf_popup {
+  border-radius: var(--osf-popup-border-radius)
+}
+
+.osf_float_button {
+  top: var(--osf-float-button-top);
+  background-color: var(--osf-float-btn-bg-color);
+  color: var(--osf-float-btn-color)
+}
+
+.osf_inline_button {
+  color: var(--osf-inline-btn-color);
+  background-color: var(--osf-inline-btn-bg-color);
+}
+
+.osf_sr_content {
+  font-size: var(--osf-font-size);
+  font-family: var(--osf-font-family);
+}
+
+/* Integrate with Sense theme */
+.osf-theme-sense #bis-inline-button,
+.osf-theme-sense .osf_submit_button {
+  border: none;
+  height: 47px;
+  margin-bottom: 10px;
+  border-radius: var(--buttons-radius-outset);
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  cursor: pointer;
+}
+
+.osf-theme-sense .osf_input {
+  height: 47px;
+  border-radius: var(--buttons-radius-outset);
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+}
+
+.osf-theme-sense .osf_submit_button {
+  margin-bottom: 0;
+}
+
+/* Integrate with Ride theme */
+.osf-theme-ride #bis-inline-button,
+.osf-theme-ride .osf_submit_button {
+  height: 47px;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  cursor: pointer;
+}
+
+.osf-theme-ride .osf_submit_button {
+  margin-bottom: 0;
+}
+
+.osf-theme-ride .osf_line {
+  border: .1rem solid #dddddd;
+}
+
+.osf-theme-ride .osf_input {
+  border-radius: var(--buttons-radius-outset);
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.osf-theme-ride input.osf_input {
+  height: 47px;
+}
+
+.osf-theme-ride textarea.osf_input {
+  height: 80px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.osf-theme-ride .osf_close_button {
+  font-size: 2.4rem;
+}
+
+.osf-theme-ride .osf_select {
+  height: 47px;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: transparent;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.osf-theme-ride .osf_select:focus-visible,
+.osf-theme-ride .osf_input:focus-visible,
+.osf-theme-ride .osf_submit_button:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+.osf-theme-ride .osf_inline_form {
+  border: .1rem solid #ffffff;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+/* Integrate with ColorBlock theme */
+.osf-theme-colorblock .osf_submit_button {
+  min-height: calc(4.5rem + var(--buttons-border-width) * 2);
+  padding: 0 3rem;
+  border: 0;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+}
+
+.osf-theme-colorblock .osf_inline_button {
+  padding: 0 3rem;
+  min-height: calc(4.5rem + var(--buttons-border-width) * 2);
+  border: 0;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+}
+
+.osf-theme-colorblock input.osf_input {
+  min-height: calc(4.5rem + var(--buttons-border-width) * 2);
+}
+
+.osf-theme-colorblock textarea.osf_input {
+  min-height: 6rem
+}
+
+.osf-theme-colorblock .osf_heading {
+  font-size: calc(var(--font-heading-scale) * 2rem);
+  font-weight: bold;
+}
+
+.osf-theme-taste .osf_inline_button {
+  min-height: calc(4.5rem + var(--buttons-border-width) * 2);
+  margin-bottom: 10px;
+  border: 0;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  line-height: calc(1 + .2 / var(--font-body-scale));
+  font-family: inherit;
+}
+
+.osf-theme-taste .osf_submit_button {
+  min-height: calc(4.5rem + var(--buttons-border-width) * 2);
+  font-family: inherit;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  line-height: calc(1 + .2 / var(--font-body-scale));
+}
+
+.osf-theme-taste .osf_input {
+  font-family: inherit;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+}
+
+.osf-theme-taste input.osf_input {
+  min-height: calc(4.5rem + var(--buttons-border-width) * 2);
+  line-height: calc(1 + .2 / var(--font-body-scale));
+}
+
+
+.osf-theme-taste textarea.osf_input {
+  font-family: inherit;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+}
+
+/* Integrate with Warehouse theme */
+.osf-theme-warehouse .osf_inline_button {
+  padding: 0 30px;
+  line-height: 48px;
+  border-radius: 2px;
+  font-weight: var(--text-font-bolder-weight);
+  font-size: var(--base-text-font-size);
+}
+
+.osf-theme-warehouse .osf_heading {
+  font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 28px));
+  line-height: 1.43;
+}
+
+.osf-theme-warehouse .osf_submit_button {
+  font-weight: var(--text-font-bolder-weight);
+  font-size: var(--base-text-font-size);
+  padding: 0 30px;
+  line-height: 48px;
+}
+
+.osf-theme-warehouse input.osf_input {
+  padding: 0 30px;
+  line-height: 48px;
+}
+
+.osf-theme-warehouse .osf_select {
+  padding: 0 30px;
+  line-height: 48px;
+  height: 48px;
 }
