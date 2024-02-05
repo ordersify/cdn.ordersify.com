@@ -23,4 +23,4 @@ function removeBanner() {
   }
 }
 
-createBanner('Happy New Year! We are VERY sorry for this inconvenience but our National Holiday ( Lunar New Year ) is from Jan 20 to Jan 26 ( GMT+7 ). We will get back to you shortly. For any serious issue, please simply uninstall the app to avoid problems to your live site, then email to us');
+createBanner('Happy New Year! We are VERY sorry for this inconvenience but our National Holiday ( Lunar New Year ) is from Feb 8 to Feb 14 ( GMT+7 ). We will get back to you shortly. For any serious issue, please simply uninstall the app to avoid problems to your live site, then email to us');
